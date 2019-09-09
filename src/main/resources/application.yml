@@ -1,0 +1,54 @@
+---
+micronaut:
+  application:
+    name: micronaut-security
+
+---
+micronaut:
+  security:
+    enabled: true
+    endpoints:
+      login:
+        enabled: true
+      oauth:
+        enabled: true
+    token:
+      jwt:
+        enabled: true
+        signatures:
+          secret:
+            generator:
+              secret: 'secretsecret'
+#              jwt-algorithm: HS256
+---
+#consul:
+#  client:
+#    registration:
+#      enabled: true
+#    defaultZone:
+#---
+datasources:
+  default:
+    url: 'jdbc:h2:mem:devDB;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE'
+    driverClassName: 'org.h2.Driver'
+    username: 'sa'
+    password: ''
+
+jpa:
+  default:
+    packages-to-scan: 'edu.micronaut'
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: create-drop
+        show_sql: true
+
+liquibase:
+  datasources:
+    default:
+      change-log: 'classpath:/db/changelog/db.changelog-master.xml'
+#credentials:
+#  users:
+#    test1: test1
+#    test2: test2
+#    test3: test3

@@ -1,0 +1,20 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="3" author="Maryanna">
+        <addPrimaryKey tableName="credentials" columnNames="user_email, user_password"/>
+
+        <addForeignKeyConstraint baseTableName="credentials" baseColumnNames="user_email" constraintName="FK_email_user" referencedTableName="users"
+                                 referencedColumnNames="email" onDelete="CASCADE" onUpdate="RESTRICT"/>
+
+        <addForeignKeyConstraint baseTableName="credentials" baseColumnNames="user_password" constraintName="FK_password_user" referencedTableName="users"
+                                 referencedColumnNames="password" onDelete="CASCADE" onUpdate="RESTRICT"/>
+
+    </changeSet>
+
+
+</databaseChangeLog>

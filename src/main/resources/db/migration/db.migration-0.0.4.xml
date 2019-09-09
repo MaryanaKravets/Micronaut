@@ -1,0 +1,126 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="4" author="Maryanna">
+        <insert tableName="users">
+            <column name="first_name">Eliza</column>
+            <column name="last_name">Lim</column>
+            <column name="phone_number">122334</column>
+            <column name="email">eliza@mail.com</column>
+            <column name="password">eliza</column>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name">Pierce</column>
+            <column name="last_name">Brown</column>
+            <column name="phone_number">233445</column>
+            <column name="email">pierce@mail.com</column>
+            <column name="password">pierce</column>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name">David</column>
+            <column name="last_name">McCullough</column>
+            <column name="phone_number">456780</column>
+            <column name="email">david@mail.com</column>
+            <column name="password">david</column>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name">Michael</column>
+            <column name="last_name">Robotmhan</column>
+            <column name="phone_number">545678</column>
+            <column name="email">michael@mail.com</column>
+            <column name="password">michael</column>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name">Ellison</column>
+            <column name="last_name">Cooper</column>
+            <column name="phone_number">908767</column>
+            <column name="email">ellison@mail.com</column>
+            <column name="password">ellison</column>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name">Rachel</column>
+            <column name="last_name">DeLoache</column>
+            <column name="phone_number">987654</column>
+            <column name="email">rachel@mail.com</column>
+            <column name="password">rachel</column>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name">Zara</column>
+            <column name="last_name">Raheem</column>
+            <column name="phone_number">786543</column>
+            <column name="email">zara@mail.com</column>
+            <column name="password">zara</column>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name">Elyssa</column>
+            <column name="last_name">Friendland</column>
+            <column name="phone_number">907865</column>
+            <column name="email">elyssa@mail.com</column>
+            <column name="password">elyssa</column>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name">Spencer</column>
+            <column name="last_name">Quinn</column>
+            <column name="phone_number">874532</column>
+            <column name="email">spencer@mail.com</column>
+            <column name="password">spencer</column>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name">Jay</column>
+            <column name="last_name">McLean</column>
+            <column name="phone_number">894321</column>
+            <column name="email">jay@mail.com</column>
+            <column name="password">jay</column>
+        </insert>
+
+    </changeSet>
+
+<!--    <changeSet id="5" author="Maryanna">-->
+<!--        <insert tableName="credentials">-->
+<!--            <column name="user_email">eliza@mail.com</column>-->
+<!--            <column name="user_password">eliza</column>-->
+<!--        </insert>-->
+<!--        <insert tableName="credentials">-->
+<!--            <column name="user_email">pierce@mail.com</column>-->
+<!--            <column name="user_password">pierce</column>-->
+<!--        </insert>-->
+<!--        <insert tableName="credentials">-->
+<!--            <column name="user_email">david@mail.com</column>-->
+<!--            <column name="user_password">david</column>-->
+<!--        </insert>-->
+<!--        <insert tableName="credentials">-->
+<!--            <column name="user_email">michael@mail.com</column>-->
+<!--            <column name="user_password">michael</column>-->
+<!--        </insert>-->
+<!--        <insert tableName="credentials">-->
+<!--            <column name="user_email">ellison@mail.com</column>-->
+<!--            <column name="user_password">ellison</column>-->
+<!--        </insert>-->
+<!--        <insert tableName="credentials">-->
+<!--            <column name="user_email">rachel@mail.com</column>-->
+<!--            <column name="user_password">rachel</column>-->
+<!--        </insert>-->
+<!--        <insert tableName="credentials">-->
+<!--            <column name="user_email">zara@mail.com</column>-->
+<!--            <column name="user_password">zara</column>-->
+<!--        </insert>-->
+<!--        <insert tableName="credentials">-->
+<!--            <column name="user_email">elyssa@mail.com</column>-->
+<!--            <column name="user_password">elyssa</column>-->
+<!--        </insert>-->
+<!--        <insert tableName="credentials">-->
+<!--            <column name="user_email">spencer@mail.com</column>-->
+<!--            <column name="user_password">spencer</column>-->
+<!--        </insert>-->
+<!--        <insert tableName="credentials">-->
+<!--            <column name="user_email">jay@mail.com</column>-->
+<!--            <column name="user_password">jay</column>-->
+<!--        </insert>-->
+
+<!--    </changeSet>-->
+
+</databaseChangeLog>
