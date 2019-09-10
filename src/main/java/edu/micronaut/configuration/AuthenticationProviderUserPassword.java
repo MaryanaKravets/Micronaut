@@ -17,7 +17,6 @@ import java.util.Optional;
 public class AuthenticationProviderUserPassword implements AuthenticationProvider {
 
     @Inject
-    //UserStore store;
     private IUserService iUserService;
 
     @Override
@@ -35,23 +34,5 @@ public class AuthenticationProviderUserPassword implements AuthenticationProvide
         return  new UserDetails(user.getEmail(), new ArrayList<>());
     }
 
-
-
-
-//        String email=authenticationRequest.getIdentity().toString();
-//        String password=authenticationRequest.getSecret().toString();
-//        if(password.equals(store.getUserPassword(email))){
-//            UserDetails details=new UserDetails(email, new ArrayList<>());
-//            return Flowable.just(details);
-//        }else {
-//            return Flowable.just(new AuthenticationFailed());
-//        }
-
-
-
-
-//        if(authenticationRequest.getIdentity().equals("user") && authenticationRequest.getSecret().equals("password")) {
-//            return Flowable.just(new UserDetails((String)authenticationRequest.getIdentity(), new ArrayList<>()));
-//        } return Flowable.just(new AuthenticationFailed());
 
 }
